@@ -88,10 +88,11 @@ from keepnote import translate as _
 # constants
 DEFAULT_FONT = "Sans 10"
 TEXTVIEW_MARGIN = 5
-if keepnote.get_platform() == "darwin":
-    CLIPBOARD_NAME = gdk.SELECTION_PRIMARY
-else:
-    CLIPBOARD_NAME = "CLIPBOARD"
+#if keepnote.get_platform() == "darwin":
+#    CLIPBOARD_NAME = gdk.SELECTION_PRIMARY
+#else:
+#    CLIPBOARD_NAME = "CLIPBOARD"
+CLIPBOARD_NAME = "CLIPBOARD"
 RICHTEXT_ID = -3    # application defined integer for the clipboard
 CONTEXT_MENU_ACCEL_PATH = "<main>/richtext_context_menu"
 QUOTE_FORMAT = u'from <a href="%u">%t</a>:<br/>%s'
